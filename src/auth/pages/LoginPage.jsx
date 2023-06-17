@@ -76,7 +76,7 @@ export const LoginPage = () => {
 							color='inherit'
 							to='/auth/register'
 						>
-							Create acount
+							{"Don't have an account? Sign Up"}
 						</Link>
 					</Grid>
 				</Grid>
