@@ -1,4 +1,6 @@
-import { Grid, Typography } from '@mui/material';
+import { Avatar, Grid, Typography } from '@mui/material';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { Copyright } from '../../ui';
 
 export const AuthLayout = ({ children, title = '' }) => {
 	return (
@@ -21,14 +23,26 @@ export const AuthLayout = ({ children, title = '' }) => {
 					borderRadius: 2,
 				}}
 			>
-				<Typography
-					variant='h5'
-					sx={{ mb: 1 }}
+				<Grid
+					container
+					direction='column'
+					alignItems='center'
+					justifyContent='center'
 				>
-					{title}
-				</Typography>
+					<Avatar sx={{ m: 1, p: 1, bgcolor: 'secondary.main' }}>
+						<LockOutlinedIcon sx={{ fontSize: 20 }} />
+					</Avatar>
+					<Typography
+						variant='h5'
+						sx={{ mb: 1 }}
+					>
+						{title}
+					</Typography>
+				</Grid>
 
 				{children}
+
+				<Copyright sx={{ mt: 5 }} />
 			</Grid>
 		</Grid>
 	);
