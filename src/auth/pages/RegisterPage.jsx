@@ -4,7 +4,7 @@ import { AuthLayout } from '../layout';
 
 export const RegisterPage = () => {
 	return (
-		<AuthLayout title='Create Acount'>
+		<AuthLayout title='Sing Up'>
 			<form action=''>
 				<Grid container>
 					<Grid
@@ -73,8 +73,9 @@ export const RegisterPage = () => {
 							component={RouterLink}
 							color='inherit'
 							to='/auth/login'
+							variant='body2'
 						>
-							I already have an account
+							Already have an account? Sign in
 						</Link>
 					</Grid>
 				</Grid>
