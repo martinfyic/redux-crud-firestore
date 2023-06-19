@@ -37,7 +37,6 @@ export const LoginPage = () => {
 	};
 
 	const onGoogleSubmit = () => {
-		console.log('onGoogleSignIn');
 		dispatch(startGoogleSignIn());
 	};
 
