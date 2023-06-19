@@ -44,6 +44,7 @@ export const LoginPage = () => {
 	return (
 		<AuthLayout title='Sign In'>
 			<form
+				className='animate__animated animate__fadeIn animate__fast'
 				action=''
 				onSubmit={onSubmit}
 			>

@@ -53,6 +53,7 @@ export const RegisterPage = () => {
 	return (
 		<AuthLayout title='Sing Up'>
 			<form
+				className='animate__animated animate__fadeIn animate__fast'
 				action=''
 				onSubmit={onSubmit}
 			>
