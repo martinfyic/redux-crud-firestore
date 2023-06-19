@@ -47,9 +47,7 @@ export const NoteView = () => {
 					fullWidth
 					multiline
 					placeholder='Write your post here'
-					// label='Post'
 					minRows={10}
-					// sx={{ border: 'none', mb: 1 }}
 				/>
 			</Grid>
 
