@@ -15,6 +15,10 @@ export const SideBarItem = ({ title = '', body, id, date, imageUrls = [] }) => {
 		return title.length > 17 ? title.substring(0, 17) + '...' : title;
 	}, [title]);
 
+	const truncateBody = useMemo(() => {
+		return body.length > 65 ? body.substring(0, 65) + '...' : body;
+	}, [body]);
+
 	const dispatch = useDispatch();
 
 	const onClickSetNote = () => {
@@ -35,7 +39,7 @@ export const SideBarItem = ({ title = '', body, id, date, imageUrls = [] }) => {
 						title={title}
 						primary={truncateTitle}
 					/>
-					<ListItemText secondary={body} />
+					<ListItemText secondary={truncateBody} />
 				</Grid>
 			</ListItemButton>
 		</ListItem>
